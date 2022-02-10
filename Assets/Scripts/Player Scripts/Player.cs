@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
+    
     private int mentalHealth = 50;
     /// <summary>
     /// Здоровье персонажа. Оно будет снижаться после каждого проекта и
@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     /// </summary>
     public int MentalHealth { get => mentalHealth; set { mentalHealth = value; } }
 
-
+    
     private float damagePerClick = 1;
     /// <summary>
     /// Урон за клик по "дедлайну"

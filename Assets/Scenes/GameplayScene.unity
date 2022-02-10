@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 651764277}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 1559323980}
   - component: {fileID: 1559323982}
   m_Layer: 0
-  m_Name: GameController
+  m_Name: GameplayController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -445,7 +445,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92ed653e2e2d7404495ef84b888fd98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameController: {fileID: 1559323979}
 --- !u!4 &1559323981
 Transform:
   m_ObjectHideFlags: 0
@@ -469,11 +468,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1559323979}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21aad6ecdc23747f4ac75c82dff3fcde, type: 3}
+  m_Script: {fileID: 11500000, guid: 70e77e4cadac7144e92b976fa134711c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 663641421759031515, guid: 47b9b6b10a3b78b4cabcf2cd4cca1fbd, type: 3}
-  isGameStarted: 0
 --- !u!1 &1773489467
 GameObject:
   m_ObjectHideFlags: 0
