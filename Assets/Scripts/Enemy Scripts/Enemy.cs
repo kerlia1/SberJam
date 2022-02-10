@@ -34,6 +34,6 @@ public class Enemy : MonoBehaviour {
     /// Инициализация параметров при спавне врага
     /// </summary>
     public void Init() {
-        Health = Random.Range(lowerHealthBound, higherHealthBound) * 5;
+        Health = 40;
     }
 }
