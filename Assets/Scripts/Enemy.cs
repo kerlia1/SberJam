@@ -19,8 +19,7 @@ public class Enemy : MonoBehaviour {
     private void Awake() {
         Init();
     }
-
-
+    
     /// <summary>
     /// Инициализация параметров при спавне врага
     /// </summary>
