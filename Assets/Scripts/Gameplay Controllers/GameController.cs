@@ -4,31 +4,38 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    // Тут объекты, через которые будет идти взаимодействие
-    GameObject player = GameObject.FindGameObjectWithTag("Player");
-    GameObject enemy;
-    GameObject UpgradePanel;
 
-    // Тут переменные связанные с классом игрок
-    int playerHp;
+    [SerializeField] GameObject enemy;
 
+    // Начало игры
+    public bool isGameStarted = false;
 
     private void Awake()
     {
-        Init();
+        isGameStarted = true;
     }
 
+    private void Start()
+    {
+        if (isGameStarted)
+        {
+            CreateFirstEnemy();
+        }
+    }
+
+
+    void CreateFirstEnemy()
+    {
+        Instantiate(enemy);
+    }
 
     /// <summary>
-    /// Инициализация всех параметров.
+    /// Тут будем создавать врага после самого первого старта(повешу на условие позже)
     /// </summary>
-    public void Init()
+    /// <param name="id"></param>
+    void CreateEnemy(int id)
     {
-        playerHp = player.GetComponent<Player>().MentalHealth;
+        Instantiate(enemy);
     }
 
-    public bool Lose()
-    {
-        return false;
-    }
 }
